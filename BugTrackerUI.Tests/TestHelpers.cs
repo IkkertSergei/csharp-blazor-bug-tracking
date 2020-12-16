@@ -32,6 +32,7 @@ namespace BugTrackerUI.Tests
 
         public static string GetRootString()
         {
+           // return "D:\\dev\\WagoGitHub\\csharp-blazor-bug-tracking\\";
             return ".." + Path.DirectorySeparatorChar + ".." + Path.DirectorySeparatorChar + ".." + Path.DirectorySeparatorChar + ".." + Path.DirectorySeparatorChar;
         }
     }

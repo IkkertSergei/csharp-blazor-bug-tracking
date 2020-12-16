@@ -32,7 +32,7 @@ namespace M2_BugTrackerUI.Tests.CreatingNavigationAndComponents
             var secondLi = ulTag.Descendants("li").ElementAt(1);
 
             var firstNavLink = firstLi.Descendants("NavLink").FirstOrDefault();
-            Assert.True(firstNavLink != null && firstNavLink.Attributes["href"]?.Value == "" && firstNavLink.InnerText == "Home",
+            Assert.True(firstNavLink != null && firstNavLink.Attributes["href"]?.Value == "/Home" && firstNavLink.InnerText == "Home",
                 "The first `li` element should contain a `NavLink` component with with an `href` set to `\"\"` and contain the text `\"Home\"`.");
             
             var secondNavLink = secondLi.Descendants("NavLink").FirstOrDefault();
