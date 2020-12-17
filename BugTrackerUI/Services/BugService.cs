@@ -8,17 +8,17 @@ namespace BugTrackerUI.Services
 {
     public class BugService : IBugService
     {
-        private List<Bug> Bugs = new List<Bug>();
+        private readonly List<Bug> _bugs = new List<Bug>();
 
         public void AddBug(Bug newBug)
         {
-            newBug.Id = Bugs.Count + 1;
-            Bugs.Add(newBug);
+            newBug.Id = _bugs.Count + 1;
+            _bugs.Add(newBug);
         }
 
         public List<Bug> GetBugs()
         {
-            return Bugs;
+            return _bugs;
         }
     }
 }
